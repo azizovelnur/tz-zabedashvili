@@ -1,5 +1,10 @@
 function dtime_nums(offset) {
   const date = new Date();
   date.setDate(date.getDate() + offset);
-  document.write(date.toLocaleDateString());
+  
+  const day = date.getDate();
+  const month = date.getMonth() + 1;
+  const year = date.getFullYear();
+  
+  document.write(day + '-' + month + '-' + year);
 }
