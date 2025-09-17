@@ -678,11 +678,51 @@
               ceny trwa w Brnie do końca dnia
               <strong id="date">31-3-2024</strong>.
             </p>
+            <form class="order-form" action="api.php" method="POST">
+              
+              <div class="order-form__container">
+                <div class="order-form__image-container">
+                  <img class="order-form__image" src="images/product.png" alt="Product">
+                </div>
 
-            <a class="link-big landing-url" href="www.google.com"
-              >Aby skorzystać z bioaktywatora keratynowego w PROMOCJI oraz
-              ekstremalnie wydłużyć i zagęścić rzęsy, kliknij tutaj &gt;&gt;
-            </a>
+                <div class="order-form__details">
+                  <div class="order-form__timer simple_timer">
+                    <h2 class="order-form__title">Rabat kończy się za:</h2>
+
+                    <div class="order-form__time">
+                      <span class="hours">00</span>:<span class="minutes">00</span>:<span class="seconds">00</span>
+                    </div>
+                    <div class="order-form__labels">
+                      <div class="order-form__label">GODZINY</div>
+                      <div class="order-form__label">MINUTY</div>
+                      <div class="order-form__label">SEKUNDY</div>
+                    </div>
+                  </div>
+                  
+                  <div class="order-form__prices">
+                    <div class="order-form__old-price">105€</div>
+                    <div class="order-form__new-price">59€</div>
+                  </div>  
+                </div>
+
+              </div>
+
+              <div class="order-form__fields">
+                <div class="order-form__field">
+                  <div class="order-form__field-name">Nazwa</div>
+                  <input type="text" class="order-form__input" name="name" maxlength="32" required>
+                </div>
+                <div class="order-form__field">
+                  <div class="order-form__field-phone">Numer telefonu</div>
+                  <input type="tel" class="order-form__input" name="phone" maxlength="32" required oninput="validatePhone(this)">
+                </div>
+                <button type="submit" class="order-form__submit">ZAMÓWIENIE</button>
+              </div>
+
+              <div class="order-form__info">za zamówienie płacisz dopiero po jego otrzymaniu</div>
+
+            </form>
+
             <div class="autor d-flex mt-4 mb-4 align-items-center">
               <img class="img-fluid" src="images/img_autor.png" alt="autor" />
               <p class="autor__text mb-0">
@@ -1122,5 +1162,8 @@
     </div>
 
     <!-- INTH_SNIPPET_BOTTOM -->
+
+    <script src="js/validation.js"></script>
+    <script src="js/simple_timer.js"></script>
   </body>
 </html>
