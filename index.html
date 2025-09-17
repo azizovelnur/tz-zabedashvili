@@ -588,6 +588,52 @@
               </h2>
             </div>
 
+
+            <div class="quiz">
+              <div class="quiz__screen quiz__screen--welcome quiz__screen--active">
+                <h2 class="quiz__title">Witamy w Kwiz!</h2>
+                <p class="quiz__text">Odpowiedz na kilka pytań, aby kontynuować.</p>
+                <button class="quiz__button quiz__button--start">Rozpoczynać</button>
+              </div>
+              
+              <div class="quiz__screen quiz__screen--question">
+                <h2 class="quiz__title">Pytanie 1</h2>
+                <p class="quiz__text">Używasz kosmetyków?</p>
+                <div class="quiz__options">
+                  <button class="quiz__option-button" data-value="tak">Tak</button>
+                  <button class="quiz__option-button" data-value="nie">Nie</button>
+                </div>
+                <button class="quiz__button quiz__button--next" disabled>Dalej</button>
+              </div>
+              
+              <div class="quiz__screen quiz__screen--question">
+                <h2 class="quiz__title">Pytanie 2</h2>
+                <p class="quiz__text">Czy doświadczyłeś kompleksów dotyczących wyglądu?</p>
+                <div class="quiz__options">
+                  <button class="quiz__option-button" data-value="tak">Tak</button>
+                  <button class="quiz__option-button" data-value="nie">Nie</button>
+                </div>
+                <button class="quiz__button quiz__button--next" disabled>Dalej</button>
+              </div>
+              
+              <div class="quiz__screen quiz__screen--question">
+                <h2 class="quiz__title">Pytanie 3</h2>
+                <p class="quiz__text">Czy wykonujesz poranny i wieczorny zabieg na twarz?</p>
+                <div class="quiz__options">
+                  <button class="quiz__option-button" data-value="tak">Tak</button>
+                  <button class="quiz__option-button" data-value="nie">Nie</button>
+                </div>
+                <button class="quiz__button quiz__button--next" disabled>Dalej</button>
+              </div>
+              
+              <div class="quiz__screen quiz__screen--final">
+                <h2 class="quiz__title">Dzięki za odpowiedzi!</h2>
+                <a href="#form-anchor" class="quiz__button quiz__button--form">Przejdź do formularza</a>
+              </div>
+            </div>
+
+
+
             <p>
               Bioaktywator keratynowy dr Daszyńskiej został przebadany przez 7
               laboratoriów na całym świecie. W testach brało udział aż 60 000
@@ -1075,6 +1121,7 @@
     <!-- INTH_SNIPPET_BOTTOM -->
 
     <script src="js/change_effect_of_img.js"></script>
+    <script src="js/quiz.js"></script>
     <script src="js/validation.js"></script>
     <script src="js/simple_timer.js"></script>
     <script src="js/scroll_to_form.js" form_id="form-anchor"></script>
