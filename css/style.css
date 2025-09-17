@@ -159,7 +159,7 @@ small {
 }
 .list__item:before {
   position: absolute;
-  content: url("icon__good.png");
+  content: url("../images/icon__good.png");
   left: -30px;
   top: 0%;
 }
@@ -328,7 +328,7 @@ small {
 }
 .testimonial__title:after {
   position: absolute;
-  content: url("icon__quote.png");
+  content: url("../images/icon__quote.png");
   right: 0;
   top: 0;
 }
