@@ -664,3 +664,30 @@ small {
   color: gray;
   margin-top: 4px;
 }
+
+.image-effect__container {
+  width: 474px;
+  margin: 0 auto;
+}
+
+.image-effect__img {
+  filter: grayscale(100%);
+  transition: filter 0.4s;
+}
+
+
+
+.image-effect__button {
+  background-color: #BF1A60;
+  color: white;
+  font-weight: 700;
+  width: 100%;
+  margin-top: 6px;
+  height: 44px;
+  border: none;
+  border-radius: 4px;
+}
+
+.image-effect__title {
+  font-size: 34px;
+}
