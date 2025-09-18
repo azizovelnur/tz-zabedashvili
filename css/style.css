@@ -587,8 +587,8 @@ small {
 
 
 .order-form {
-  height: 580px;
-  width: 780px;
+  min-height: 580px;
+  max-width: 780px;
   border: 2px solid gray;
   border-radius: 10px;
   padding: 20px 40px;
@@ -610,7 +610,7 @@ small {
 }
 
 .order-form__image {
-  width: 160px;
+  max-width: 160px;
 }
 
 .order-form__field-name,
@@ -644,8 +644,8 @@ small {
 
 
 .order-form__submit {
-  height: 54px;
-  width: 400px;
+  max-height: 54px;
+  max-width: 400px;
   background-color: #F20010;
   color: white;
   border: 1px solid black;
@@ -658,12 +658,12 @@ small {
 .order-form__time {
   display: flex;
   justify-content: space-between;
-  width: 340px;
+  max-width: 340px;
   margin-top: 30px;
 }
 
 .order-form__hours-value, .order-form__minutes-value, .order-form__seconds-value {
-  width: 80px;
+  max-width: 80px;
   background-color: #f7f7f7b1;
   color: #F20010;
   font-size: 30px;
@@ -672,7 +672,7 @@ small {
 }
 .order-form__hours-text, .order-form__minutes-text, .order-form__seconds-text {
   font-size: 10px;
-  width: 50px;
+  max-width: 50px;
   margin: 6px auto 0px auto;
   font-weight: 700;
   color: #F20010;
@@ -726,7 +726,7 @@ small {
 }
 
 .image-effect__container {
-  width: 474px;
+  max-width: 474px;
   margin: 0 auto;
 }
 
@@ -848,4 +848,34 @@ small {
 .quiz__button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+
+
+@media (max-width: 780px) {
+  .order-form__container {
+    flex-direction: column;
+  }
+
+  .image-effect__img {
+    width: 100%;
+  }
+  .image-effect__button {
+    width: 100%;
+  }
+
+
+  .order-form__title {
+    text-align: center;
+  }
+
+  .order-form__time {
+    margin: 30px auto 0 auto;
+    max-width: 220px;
+  }
+
+  .order-form__image {
+    display: block;
+    margin: 0 auto;
+  }
 }
