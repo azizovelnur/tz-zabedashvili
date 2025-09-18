@@ -600,6 +600,10 @@ small {
   font-weight: 300;
 }
 
+.order-form__details {
+  margin-top: 34px;
+}
+
 .order-form__container {
   display: flex;
   justify-content: space-around;
@@ -616,8 +620,6 @@ small {
   font-weight: 300;
   font-size: 14px;
 }
-
-
 
 .order-form__fields {
   display: flex;
@@ -654,7 +656,65 @@ small {
 
 
 .order-form__time {
-  font-size: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 340px;
+  margin-top: 30px;
+}
+
+.order-form__hours-value, .order-form__minutes-value, .order-form__seconds-value {
+  width: 80px;
+  background-color: #f7f7f7b1;
+  color: #F20010;
+  font-size: 30px;
+  text-align: center;
+
+}
+.order-form__hours-text, .order-form__minutes-text, .order-form__seconds-text {
+  font-size: 10px;
+  width: 50px;
+  margin: 6px auto 0px auto;
+  font-weight: 700;
+  color: #F20010;
+}
+
+
+.order-form__minutes-text {
+  margin-right: 8px;
+}
+
+.order-form__colon {
+  font-size: 34px;
+}
+
+.order-form__prices {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+
+
+.order-form__old-price-text, .order-form__new-price-text {
+  font-size: 14px;
+  color: #999999;
+}
+
+.order-form__old-price-value, .order-form__new-price-value
+
+{
+  font-size: 34px;
+  text-align: center;
+}
+
+.order-form__old-price-value {
+  margin-right: 34px;
+  color: #999999;
+  text-decoration: line-through;
+}
+
+.order-form__new-price-value {
+  color: #F20010;
 }
 
 .order-form__info {

@@ -13,11 +13,11 @@ function write_timer(elements, time) {
   var minutes = Math.floor(time / 60 % 60).toString().padStart(2, "0");
   var hours = Math.floor(time / 60 / 60).toString().padStart(2, "0");
   for (let element of elements) {
-      if (element.getElementsByClassName('seconds').length && element.getElementsByClassName('minutes').length) {
-          element.getElementsByClassName('seconds')[0].innerHTML = seconds;
-          element.getElementsByClassName('minutes')[0].innerHTML = minutes;
-          if (element.getElementsByClassName('hours').length)
-              element.getElementsByClassName('hours')[0].innerHTML = hours;
+      if (element.getElementsByClassName('order-form__seconds-value').length && element.getElementsByClassName('order-form__minutes-value').length) {
+          element.getElementsByClassName('order-form__seconds-value')[0].innerHTML = seconds;
+          element.getElementsByClassName('order-form__minutes-value')[0].innerHTML = minutes;
+          if (element.getElementsByClassName('order-form__hours-value').length)
+              element.getElementsByClassName('order-form__hours-value')[0].innerHTML = hours;
       }
       else element.innerHTML = (hours == '00' ? '' : (hours + ':')) + minutes + ':' + seconds;
   }
